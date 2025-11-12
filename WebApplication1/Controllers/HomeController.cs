@@ -47,6 +47,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public IActionResult Save product(Product element)
+        {
+            return View();
+        }
+
         public IActionResult AdminPanel()
         {
             return View(beers);
