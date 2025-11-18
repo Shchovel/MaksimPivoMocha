@@ -1,0 +1,36 @@
+﻿@model Beer
+<h1>Create new product</h1>
+
+
+<form asp-action="Save product">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Id</label>
+        <input asp-for="Id" type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter ID">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Price</label>
+        <input asp-for="Price" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter price">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Brand</label>
+        <input asp-for="Brand" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter brand">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Category</label>
+        <input asp-for="Category" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter category">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Country of origin</label>
+        <input asp-for="Countryoforigin" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter country of origin">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Package</label>
+        <input asp-for="Package" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter package">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Image</label>
+        <input asp-for="ImageUrl" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Put image">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save product</button>
+</form>
