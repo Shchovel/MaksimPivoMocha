@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Models;
 
@@ -52,10 +53,26 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult Edit()
+        public IActionResult Edit(int id)
         {
-            return View();
+            var item = products. FirstOrDefault(x => x.Id == id);
+
+            if (item == null)
+                return NotFound(); // 404
+
+            return View(item);
         }
+
+        public IActionResult UpdateProduct(Product element)
+        {
+            var index = products.FindIndex(x => x.Id == id);
+
+            Product[index] = element;   
+
+            return RedirectToAction("AdminPanel");
+        }
+
+        [HttpPost]
 
         public IActionResult Save product(Product element)
         {
