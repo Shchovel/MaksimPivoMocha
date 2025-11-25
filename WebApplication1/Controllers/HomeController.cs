@@ -53,6 +53,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public IActionResult Details()
+        {
+            return View();
+        }
+
         public IActionResult Edit(int id)
         {
             var item = products. FirstOrDefault(x => x.Id == id);
