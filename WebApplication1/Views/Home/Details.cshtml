@@ -1,1 +1,91 @@
-﻿
+﻿<h1>Lvivske rizdvane</h1>
+
+<p>Reallu tasty,quickly intoxicates</p>
+
+<div class="container py-5">
+    <div class="row g-4">
+
+        <!-- LEFT: Product Images -->
+        <div class="col-md-6">
+
+            <!-- Main Image -->
+            <img id="mainImage" src="https://via.placeholder.com/600x600" class="product-img-large mb-3" alt="Product">
+
+            <!-- Thumbnails -->
+            <div class="row g-2">
+                <div class="col-3">
+                    <img src="https://cdn.27.ua/original/a7/6d/6989677_2.jpeg" class="thumb-img" onclick="changeImage(this.src)">
+                </div>
+                <div class="col-3">
+                    <img src="https://cdn.27.ua/original/a7/6d/6989677_2.jpeg" class="thumb-img" onclick="changeImage(this.src)">
+                </div>
+                <div class="col-3">
+                    <img src="https://cdn.27.ua/original/a7/6d/6989677_2.jpeg" class="thumb-img" onclick="changeImage(this.src)">
+                </div>
+                <div class="col-3">
+                    <img src="https://cdn.27.ua/original/a7/6d/6989677_2.jpeg" class="thumb-img" onclick="changeImage(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Product Info -->
+        <div class="col-md-6">
+            <h2>Stylish Leather Backpack</h2>
+
+            <div class="mb-3">
+                ⭐⭐⭐⭐⭐ (124 reviews)
+            </div>
+
+            <h3 class="text-primary">$79.99</h3>
+
+            <p class="mt-3">
+                This stylish leather backpack is perfect for travel, school, or daily use.
+                Made from premium materials and designed for comfort, it has multiple compartments to organize your belongings.
+            </p>
+
+            <ul>
+                <li>100% genuine leather</li>
+                <li>Water-resistant material</li>
+                <li>Adjustable shoulder straps</li>
+                <li>Fits 15-inch laptop</li>
+            </ul>
+
+            <div class="mt-4">
+                <label class="form-label">Quantity</label>
+                <input type="number" class="form-control w-25" value="1" min="1">
+            </div>
+
+            <button class="btn btn-primary btn-lg mt-4">
+                Add to Cart
+            </button>
+
+            <button class="btn btn-outline-secondary btn-lg mt-4">
+                Buy Now
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeImage(src) {
+        document.getElementById("mainImage").src = src;
+    }
+</script>
+
+<style>
+    .product-img-large {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .thumb-img {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid transparent;
+    }
+
+        .thumb-img:hover {
+            border: 2px solid #0d6efd;
+        }
+</style>
