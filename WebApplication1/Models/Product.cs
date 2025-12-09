@@ -9,5 +9,7 @@
         public string Category { get; set; }
         public string Countryoforigin { get; set; }
         public string Package { get; set; }
+        public string imageurl { get; set; }
+
     }
 }
